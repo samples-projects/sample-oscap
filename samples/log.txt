@@ -1,0 +1,60 @@
+
+22:28:45 
+info     
+SCAP Workbench 1.1.6, compiled with Qt 4.8.7, using OpenSCAP 1.2.17
+
+
+22:28:52 
+info     
+Opened file '/usr/share/xml/scap/ssg/content/ssg-centos7-ds.xml'.
+
+
+22:29:10 
+info     
+Querying capabilities...
+
+
+22:29:10 
+info     
+Creating temporary files...
+
+
+22:29:10 
+info     
+Starting the oscap process...
+
+
+22:29:10 
+info     
+Processing...
+
+
+22:35:16 
+warning  
+Remote resources might be necessary for this profile to work properly. Please select "Fetch remote resources" for complete scan
+
+
+22:35:16 
+warning  
+Skipping 'https://www.redhat.com/security/data/oval/com.redhat.rhsa-RHEL7.xml' file which is referenced from datastream
+
+
+22:35:16 
+warning  
+Skipping ./security-data-oval-com.redhat.rhsa-RHEL7.xml file which is referenced from XCCDF content
+
+
+22:35:16 
+warning  
+Skipping ./security-data-oval-com.redhat.rhsa-RHEL7.xml file which is referenced from XCCDF content
+
+
+22:35:16 
+info     
+The oscap tool has finished. Reading results...
+
+
+22:35:16 
+info     
+Processing has been finished!
+
