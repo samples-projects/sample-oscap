@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.provider "virtualbox" do |vb|
     vb.name = "oscap"
-    vb.gui = true
+    vb.gui = false
     vb.cpus = 2
     vb.memory = 2048
   end
@@ -32,5 +32,4 @@ Vagrant.configure("2") do |config|
   SHELL
 
   config.vm.provision "shell", path: "install-vbox-guest-additions.sh"
-  config.vm.provision "shell", path: "install-gui-jp.sh"
 end
