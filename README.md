@@ -29,10 +29,43 @@ vagrant halt
 vagrant destroy
 ```
 
+boxの状況確認。
+
+```shell
+vagrant status
+```
+
 ssh接続。
 
 ```shell
 vagrant ssh
+```
+
+### リリース
+
+boxを作成。
+
+```ssh
+vagrant up
+```
+
+作成したboxを永続化。
+
+```ssh
+vagrant package
+```
+
+永続化したboxをアップロード。
+
+```ssh
+./upload.sh
+```
+
+永続化したboxを削除。
+
+```ssh
+rm -rf package.box
+vagrant destroy
 ```
 
 ### マニュアル
