@@ -3,9 +3,7 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "kannkyo/centos"
-  config.vm.box_version = "8.2.2004"
-  # config.vm.box = "centos/8"
-  # config.vm.box_version = "1905.1"
+  config.vm.box_version = "8.2.2004-cockpit"
   config.vm.box_check_update = false
 
   # vbguest plugin
@@ -40,8 +38,11 @@ Vagrant.configure("2") do |config|
     end
     define.vm.provision "shell", inline: <<-SHELL
       sudo yum update -y
-      sudo yum install scap-workbench scap-security-guide -y
+      sudo yum install -y \
+        openscap-scanner \
+        scap-workbench \
+        scap-security-guide \
+        scap-security-guide-doc
     SHELL
-    # define.vm.provision "shell", path: "install-gui-jp.sh"
   end
 end
